@@ -14,7 +14,7 @@ function Layout({children}) {
             </Head>
             <header className={styles.header}>
                 <img src="/images/Aimeiba_logo2.jpg"className={utilStyles.borderCircle}/>
-                <h1>{name}</h1>
+                <h1 className={utilStyles.heading2Xl}>{name}</h1>
             </header>
             <main>{children}</main>
         </div>
