@@ -17,13 +17,57 @@ export default function Home() {
         関西学院大学三田キャンパスで情報工学を専攻しています。
       </p>
     </section>
-    <div>
+
+
+    <section>
+      <h2>📝エンジニアのブログ</h2>
+      <div className={styles.grid}>
       <article>
         <Link href="/">
-        <img src="/images/thumbnail101.jpg" alt=""/>
+        <img 
+        src="/images/thumbnail01.jpg"
+        className={styles.thumbnailImage} 
+        />
         </Link>
+        <Link href="/" className={utilStyles.boldText}>
+       SSGとSSRの使い分けの場面はいつなのか?
+        </Link>
+        <br />
+        <small className={utilStyles.lightText}>
+          Febuary23,2023
+        </small>
+      </article>
+      <article>
+        <Link href="/">
+        <img 
+        src="/images/thumbnail01.jpg"
+        className={styles.thumbnailImage} 
+        />
+        </Link>
+        <Link href="/" className={utilStyles.boldText}>
+       SSGとSSRの使い分けの場面はいつなのか?
+        </Link>
+        <br />
+        <small className={utilStyles.lightText}>
+          Febuary23,2023
+        </small>
+      </article>
+      <article>
+        <Link href="/">
+        <img 
+        src="/images/thumbnail01.jpg"
+        className={styles.thumbnailImage} 
+        />
+        </Link>
+        <Link href="/" className={utilStyles.boldText}>
+       SSGとSSRの使い分けの場面はいつなのか?
+        </Link>
+        <br />
+        <small className={utilStyles.lightText}>
+          Febuary23,2023
+        </small>
       </article>
     </div>
-
+    </section>
   </Layout>);
 }
