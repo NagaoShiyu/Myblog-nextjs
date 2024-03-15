@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
-import Layout from "./components/Layout";
+import Layout, { siteTitle } from "./components/Layout";
 import utilStyles from "/styles/utils.module.css";
 import {getPostsData} from "@/lib/post";
 
@@ -36,7 +36,10 @@ export async function getStaticProps(){
 
 export default function Home({allPostsData}) {
   return( 
-  <Layout>
+  <Layout home>
+    <Head>
+      <title>{siteTitle}</title>
+    </Head>
     <section className={utilStyles.headingMd}>
       <p>
         関西学院大学三田キャンパスで情報工学を専攻しています。
@@ -44,7 +47,7 @@ export default function Home({allPostsData}) {
     </section>
 
 
-    <section>
+    <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
       <h2>📝エンジニアのブログ</h2>
       <div className={styles.grid}>
         {allPostsData.map(({id,title,date,thumbnail}) => (
