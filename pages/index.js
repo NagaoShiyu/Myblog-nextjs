@@ -67,6 +67,21 @@ export default function Home() {
           Febuary23,2023
         </small>
       </article>
+      <article>
+        <Link href="/">
+        <img 
+        src="/images/thumbnail01.jpg"
+        className={styles.thumbnailImage} 
+        />
+        </Link>
+        <Link href="/" className={utilStyles.boldText}>
+       SSGとSSRの使い分けの場面はいつなのか?
+        </Link>
+        <br />
+        <small className={utilStyles.lightText}>
+          Febuary23,2023
+        </small>
+      </article>
     </div>
     </section>
   </Layout>);
