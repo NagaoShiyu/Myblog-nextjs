@@ -8,8 +8,6 @@ import {getPostsData} from "@/lib/post";
 
 import Link from "next/link";
 
-const inter = Inter({ subsets: ["latin"] });
-
 //SSGの場合 
 export async function getStaticProps(){
  const allPostsData = getPostsData(); //id,title,date,thumbnail
