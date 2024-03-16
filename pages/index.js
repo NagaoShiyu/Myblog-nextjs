@@ -4,7 +4,6 @@ import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Layout, { siteTitle } from "./components/Layout";
 import utilStyles from "/styles/utils.module.css";
-import { client } from "../libs/client";
 import {getPostsData} from "@/lib/post";
 
 import Link from "next/link";
