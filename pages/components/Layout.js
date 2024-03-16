@@ -1,4 +1,4 @@
-//import Head from "next/document";
+import Head from "next/document";
 import Link from "next/link";
 import styles from "./Layout.module.css";
 import utilStyles from "/styles/utils.module.css";
