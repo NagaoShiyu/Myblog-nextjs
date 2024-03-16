@@ -1,7 +1,7 @@
 import { getAllPostIds, getPostData } from "../../lib/post";
 import Layout from "../components/Layout";
 import utilStyles from "../../styles/utils.module.css";
-import Head from "next/head";
+import Head from "next/document";
 
 export async function getStaticPaths(){
     const paths = getAllPostIds();
